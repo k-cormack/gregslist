@@ -1,0 +1,12 @@
+.row img {
+    height: 100px
+}
+
+.row {
+    display: flex
+}
+
+/* .row {
+    margin: 3%;
+    text-align: center
+} */
