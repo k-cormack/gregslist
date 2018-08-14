@@ -3,7 +3,7 @@ import Job from "../../models/Job.js"
 //Creates a new HTTP Request object
 const jobsApi = axios.create({
     //base connection url
-    baseURL: 'https://bcw-gregslist.herokuapp.com/api/jobs',//this is Axios url format
+    baseURL: 'https://bcw-gregslist.herokuapp.com/api/jobs/',//this is Axios url format
     //wait 3 seconds for response
     timeout: 3000
 })
@@ -27,7 +27,7 @@ export default class JobService {
     addJob(formData, draw) {
         let newJob = new Job({
             company: formData.company.value,
-            title: formData.title.value,
+            jobTitle: formData.jobTitle.value,
             hours: formData.hours.value,
             rate: formData.rate.value,
             description: formData.description.value,

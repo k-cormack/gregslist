@@ -6,12 +6,12 @@ function drawHouses(houses) {
     let template = ''
     for (let i = 0; i < houses.length; i++) {
         const house = houses[i];
-        template = `
+        template += `
         <div style="outline: 1px solid black" class="col-3">
-        <p>${house.beds}</p>
-        <p>${house.baths}</p>
+        <p>${house.bedrooms}</p>
+        <p>${house.bathrooms}</p>
         <img src="${house.imgUrl}" alt"">
-        <p>${house.floors}</p>
+        <p>${house.levels}</p>
         <p>${house.year}</p>
         <p>${house.price}</p>
         <p>${house.description}</p>
