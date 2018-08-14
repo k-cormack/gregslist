@@ -19,7 +19,7 @@
     <input type="text" name="model" placeholder="Model" required>
     <input type="number" name="year" placeholder="Year" value="2000" required>
     <input type="text" name="price" placeholder="Price" required>
-    <input type="text" name="color" placeholder="Color" required>
+    <input type="text" name="description" placeholder="Description" required>
     <input type="url" name="imgUrl" placeholder="Image Link" required>
     <button type="submit">Add Car</button>
   </form>
@@ -40,10 +40,11 @@
     <!-- <label for="beds">Bedrooms</label> -->
     <input type="number" name="beds" placeholder="# of Bedrooms" required>
     <input type="number" name="baths" placeholder="# of Bathrooms" required>
-    <input type="number" name="size" placeholder="Sq. feet" required>
+    <input type="url" name="imgUrl" placeholder="Image Link" required>
+    <input type="number" name="levels" placeholder="Sq. feet" required>
     <input type="number" name="year" placeholder="Year Built" required>
     <input type="number" name="price" placeholder="Asking Price" required>
-    <input type="url" name="imgUrl" placeholder="Image Link" required>
+    <input type="text" name="description" placeholder="Description" required>
     <button type="submit">List House</button>
   </form>
 
@@ -61,11 +62,11 @@
   </div>
   <form onsubmit="app.controllers.carController.addJob(event)">
     <!-- <label for="title">Title</label> -->
+    <input type="text" name="company" placeholder="Company Name" required>
     <input type="text" name="title" placeholder="Job Title" required>
-    <input type="text" name="location" placeholder="City, State" required>
-    <input type="number" name="salary" placeholder="Salary" required>
-    <input type="text" name="description" placeholder="Short Description" required>
-    <input type="url" name="imgUrl" placeholder="Image Link" required>
+    <input type="number" name="hours" placeholder="Hours per week" required>
+    <input type="number" name="rate" placeholder="Salary" required>
+    <input type="text" name="description" placeholder="Job Description" required>
     <button type="submit">Add Job Listing</button>
   </form>
 
@@ -82,6 +83,8 @@
     </div>
   </div>
 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
   <script src="main.js" type="module"></script>
 </body>
 

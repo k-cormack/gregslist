@@ -1,11 +1,12 @@
 
 
 export default class Job {
-    constructor(title, location, salary, description, imgUrl) {
-        this.title = title
-        this.location = location
-        this.salary = salary
+    constructor(company, jobTitle, hours, rate, description) {
+        this.company = company
+        this.title = jobTitle
+        this.hours = hours
+        this.rate = rate
         this.description = description
-        this.imgUrl = imgUrl
+        
     }
 }

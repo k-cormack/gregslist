@@ -1,10 +1,11 @@
 export default class House {
-    constructor(beds, baths, size, year, price, imgUrl) {
-        this.beds = beds
-        this.baths = baths
-        this.size = size
+    constructor(bedrooms, bathrooms, imgUrl, levels, year, price, description) {
+        this.beds = bedrooms
+        this.baths = bathrooms
+        this.imgUrl = imgUrl
+        this.levels = levels
         this.year = year
         this.price = price
-        this.imgUrl = imgUrl
+        this.description = description
     }
 }
