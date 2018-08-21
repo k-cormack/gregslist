@@ -14,7 +14,7 @@ function drawCars(cars) {
         <button onclick="app.controllers.carController.bid('${car._id}', ${car.price})">Bid</button>
         <p>${car.year}</p>
         <p>${car.description}</p>
-        <img src="${car.imgUrl}" alt="somethingelse">
+        <img src="${car.imgUrl}" alt="">
         <button onclick="app.controllers.carController.deleteCar('${car._id}')">DELETE</button>
     </div>
     `
